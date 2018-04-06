@@ -31,5 +31,5 @@ export default {
 @import '~@/styles/custom-bootstrap';
 {{else}}
 <style>
-
+{{/bootstrap}}
 </style>
