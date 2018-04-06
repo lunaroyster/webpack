@@ -24,7 +24,7 @@
     {{/lint}}
     "build": "node build/build.js"
   },
-  "dependencies": {{#bootstrap}}
+  "dependencies": {{{#bootstrap}}
     "bootstrap": "^4.0.0",
     "node-sass": "^4.8.1",
     "sass-loader": "^6.0.7",{{/bootstrap}}
