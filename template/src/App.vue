@@ -1,34 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Nav/>
     {{#router}}
     <router-view/>
     {{else}}
-    <HelloWorld/>
+    <Home/>
     {{/router}}
   </div>
 </template>
 
 <script>
+import Nav from './components/Nav';
 {{#unless router}}
-import HelloWorld from './components/HelloWorld'
+import Home from './components/Home'
 
 {{/unless}}
 export default {
-  name: 'App'{{#router}}{{else}},
+  name: 'App',
   components: {
-    HelloWorld
-  }{{/router}}
+    Nav,
+    {{#router}}{{else}}
+    Home
+    {{/router}}
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
