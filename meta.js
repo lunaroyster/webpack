@@ -79,6 +79,11 @@ module.exports = {
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
     },
+    bootstrap: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install bootstrap?',
+    },
     lintConfig: {
       when: 'isNotTest && lint',
       type: 'list',

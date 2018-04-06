@@ -26,6 +26,10 @@ export default {
 }
 </script>
 
+{{#bootstrap}}
+<style lang='scss'>
+@import '~@/styles/custom-bootstrap';
+{{else}}
 <style>
-
+{{/bootstrap}}
 </style>
